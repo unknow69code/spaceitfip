@@ -2,7 +2,7 @@
 include_once 'cabecera.php';
 include_once 'verificar_sesion.php';
 include_once 'navegacion.php';
-use app\SpaceItfip\Controladores\BienesItfipControlador;
+
 ?>
 <div class="row">
 	<div class="col-12 mb-3">

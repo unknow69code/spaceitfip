@@ -6,7 +6,7 @@
             &copy; 2024 Tecnologia en gestion informatica
         </span> 
         <span class="navbar-brand text-center text-muted">
-            <img class="d-inline-block align-top" src="img/Space_itfip_logotype.png" alt="Logo SpaceItfip" width="42" height="42" style="vertical-align: middle;">
+            <img class="d-inline-block rounded mx-auto d-block" src="img/Space_itfip_logotype.png" alt="Logo SpaceItfip" width="42" height="42" style="vertical-align: middle;">
         </span>
         <span class="d-inline-block align-top" style="vertical-align: middle;"> 
             &copy; Spacesitfip sistema de prestamos

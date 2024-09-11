@@ -1,8 +1,10 @@
-<?php use app\SpaceItfip\Controladores\BienesItfipControlador; ?>
+<?php
+
+use app\SpaceItfip\Controladores\BienesItfipControlador; ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 	<div class="container-fluid">
 		<span class="navbar-brand">
-            <img class="d-inline-block align-top" src="img/Space_itfip_logotype.png" alt="Logo SpaceItfip" width="42" height="42">
+			<img class="d-inline-block align-top" src="img/Space_itfip_logotype.png" alt="Logo SpaceItfip" width="42" height="42">
 		</span>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -28,24 +30,26 @@
 				</li>
 				<!--<li class="nav-item">
 					<div>
-						<a class="nav-link active" href="cerrar_sesion.php"><b>Cerrar sesi&oacute;n(<?=$_SESSION['correo_administrador']?>)</b></a>
+						<a class="nav-link active" href="cerrar_sesion.php"><b>Cerrar sesi&oacute;n(<?= $_SESSION['correo_administrador'] ?>)</b></a>
 					</div>
 				</li>-->
 			</ul>
 			<ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="https://via.placeholder.com/40" alt="Avatar" class="rounded-circle" width="40" height="40">
-                </a>
-				<div class="dropdown-menu custom-left" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">FAQS</a>
-                        <a class="dropdown-item" href="#">Configuración</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="cerrar_sesion.php">Cerrar sesión</a>
-                    </div>
-            </li>
-        </ul>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown" href="#" id="navbarDropdown" role="button"
+						aria-haspopup="true" data-bs-toggle="dropdown"
+						data-bs-display="static" aria-expanded="false">
+						<img src="img/avatar.jpeg" alt="Avatar" class="rounded-circle" width="40" height="40">
+					</a>
+					<ul class="dropdown-menu dropdown-menu-end border border-dark">
+						<li><a class="dropdown-item" href="#">FASQ <i class="bi bi-chat-square-dots"></i></a></li>
+						<li><hr class="dropdown-divider border border-dark"></li>
+						<li><a class="dropdown-item" href="#">Another <i class="bi bi-tiktok"></i></a></li>
+						<li><hr class="dropdown-divider border border-dark"></li>
+						<li><a class="dropdown-item" href="cerrar_sesion.php">Cerrar Sesion  <i class="bi bi-box-arrow-right"></i></a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</div>
 </nav>
-

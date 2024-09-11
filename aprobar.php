@@ -48,9 +48,9 @@ $prestamos_pendientes = !empty($_GET['busqueda'])
 			</div>
 		<?php } else { ?>
 			<div class="table-responsive">
-				<table class="table table-light table-hover table-bordered text-center">
+				<table class="table border-primary table-hover table-bordered text-center">
 					<caption>Bienes y/o espacios f&iacute;sicos pendientes de aprobaci&oacute;n</caption>
-					<thead>
+					<thead class="table-dark">
 						<tr>
 							<th>Id. pr&eacute;stamo</th>
 							<th>Fecha registro</th>
