@@ -1,6 +1,7 @@
 <?php
 
 use app\SpaceItfip\Controladores\BienesItfipControlador; ?>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 	<div class="container-fluid">
 		<span class="navbar-brand">

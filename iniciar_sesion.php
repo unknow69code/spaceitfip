@@ -9,15 +9,25 @@ $correo = ucfirst(strtolower($_POST['correo']));
  * [$clave description]
  * @var [type]
  */
-$clave = $_POST['clave'];
+$contraseña = $_POST['contraseña'];
+/**
+ * [$politicas description]
+ * @var [type]
+ */
+$politicas = $_POST['politicas'] ? $_POST['politicas'] : '0';
 
 if (!$correo) {
     header('Location: login.php?correo_vacio');
     exit;
 }
 
-if (!$clave) {
+if (!$contraseña) {
     header('Location: login.php?clave_vacia');
+    exit;
+}
+
+if (!$politicas  === '1') {
+    header('Location: login.php?Selecciona_politicas');
     exit;
 }
 
@@ -26,15 +36,16 @@ if (!preg_match('/^[_.0-9a-zA-Z-]+@[itfip]+.[edu]+.[co]{2,6}$/i', $correo)) {
     exit;
 }
 
-if (strlen($clave) < 8) {
+if (strlen($contraseña) <= 8) {
     header('Location: login.php?clave_invalida');
     exit;
 }
 
 include_once 'vendor/autoload.php';
+
 use app\SpaceItfip\Controladores\SesionControlador;
 
-if (!SesionControlador::iniciarSesion($correo, $clave)) {
+if (!SesionControlador::iniciarSesion($correo, $contraseña)) {
     header('Location: login.php?credenciales_incorrectas');
     exit;
 } else {

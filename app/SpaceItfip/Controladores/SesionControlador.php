@@ -106,7 +106,7 @@ class SesionControlador
         self::inicializarSesion();
         if (!$_SESSION) {
             http_response_code(500);
-            header('Location: login.php?iniciar_sesion');
+            header('Location: login.php');
         }
     }
 

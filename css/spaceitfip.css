@@ -1,1 +1,66 @@
-::selection{background-color:var(--bs-primary);color:#fff}::-moz-selection{background-color:var(--bs-primary);color:#fff}body{font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:16px}
+::selection {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+::-moz-selection {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+body {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* ESTILO DEL LOGIN */
+.background-radial-gradient {
+  background-image: url("../img/loginfondo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*TERMINA EL ESTILO DEL LOGIN */
+
+.card-body {
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Fondo blanco con 50% de transparencia */
+}
+
+/**INICIO ANIMACION INPUST */
+.form-check-label {
+  font-size: 0.75rem;
+}
+
+/* Alerta flotante */
+.alert-flotante {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+/*ANIMACION DEL ALERT */
+/* Estilos iniciales de la alerta flotante */
+.alert-flotante {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.alert-flotante.show {
+  transform: translateX(-50%) translateY(20px);
+  opacity: 1;
+}
+
+.alert-flotante.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-100%);
+}
